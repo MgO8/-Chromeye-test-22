@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import PeopleList from './PeopleList';
+import GetPeopleList from './components/GetPeopleList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PeopleList />
+    <GetPeopleList />
   </React.StrictMode>
 );

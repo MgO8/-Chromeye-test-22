@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import PeopleListTable from './PeopleListTable'
+import '../App.css';
+import PeopleTable from './PeopleTable'
 import axios from "axios"
 
-function PeopleList() {
+function GetPeopleList() {
     const [people, setPeople] = useState([])
 
     useEffect(() => {
@@ -21,9 +21,9 @@ function PeopleList() {
             })
     }
     return(
-        <PeopleListTable people={people} />
+        <PeopleTable people={people} />
     )
 }
 
 
-export default PeopleList;
+export default GetPeopleList;
