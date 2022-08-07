@@ -6,7 +6,7 @@ const PagePagination = ({ peoplePerPage, totalPeople, paginate }) => {
   for (let i = 1; i <= Math.ceil(totalPeople / peoplePerPage); i++) {
     pageNumbers.push(i);
   }
-
+  
   return (
     <div className="Pagination">
         {pageNumbers.map(number => (
