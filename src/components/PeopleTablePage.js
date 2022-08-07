@@ -46,7 +46,8 @@ function PeopleTablePage(props) {
                 <div className="PeopleListTable__table-column-title">Email</div>
                 {filteredPeople.map((person, i) => {
                     return (
-                        <div className="PeopleListTable__table-column-item" key={i} >{person.email}</div>
+                        <a className="PeopleListTable__table-column-item PeopleListTable__table-column-item-link" key={i} 
+                        href={`mailto:${person.email}`}>{person.email}</a>
                     )
                 })}
             </div>

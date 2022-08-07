@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.PeopleListTable__table-column-item-link {
+  color: rgb(142, 142, 223);
+}
+
 .PeopleListTable__table-column-item:nth-child(even){
   background-color: #e8e8e9;
 }
