@@ -36,7 +36,7 @@ function PeopleTable(props) {
   }
 
   return (
-    <div>
+    <div className="PeopleTable">
       <div className="Navbar">
         <input className="SearchInput"
           type="text"
@@ -48,6 +48,7 @@ function PeopleTable(props) {
           peoplePerPage={peoplePerPage}
           totalPeople={filteredPeople.length}
           paginate={paginate}
+          currentPage={currentPage}
         />
         <div className="SelectContainer">
           <p>People per page</p>
